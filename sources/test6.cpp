@@ -3,9 +3,9 @@
 #include <header.hpp>
 #include <string>
 
-int diffWordsCounter(const std::string& str){
+int diffWordsCounter(const std::string& str) {
   std::vector<std::string> vec;
-  if(str.length()<=1){
+  if (str.length() <= 1) {
     return 0;
   }
   std::string s = str;
@@ -28,10 +28,10 @@ int diffWordsCounter(const std::string& str){
       i++;
     }
   }
-  for(unsigned int i = 0; i<vec.size(); i++){
-    for(unsigned int g = i+1; g<vec.size(); g++){
-      if(vec[i]==vec[g]){
-        vec.erase(vec.begin()+g);
+  for (unsigned int i = 0; i < vec.size(); i++) {
+    for (unsigned int g = i + 1; g < vec.size(); g++) {
+      if (vec[i] == vec[g]) {
+        vec.erase(vec.begin() + g);
         g--;
       }
     }

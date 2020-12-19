@@ -4,9 +4,9 @@
 #include <string>
 #include <vector>
 
-std::vector<std::string> uniqueWords(const std::string& str){
+std::vector<std::string> uniqueWords(const std::string& str) {
   std::vector<std::string> vec;
-  if(str.length()<=1){
+  if (str.length() <= 1) {
     return vec;
   }
   std::string s = str;
@@ -29,10 +29,10 @@ std::vector<std::string> uniqueWords(const std::string& str){
       i++;
     }
   }
-  for(unsigned int i = 0; i<vec.size(); i++){
-    for(unsigned int g = i+1; g<vec.size(); g++){
-      if(vec[i]==vec[g]){
-        vec.erase(vec.begin()+g);
+  for (unsigned int i = 0; i < vec.size(); i++) {
+    for (unsigned int g = i + 1; g < vec.size(); g++) {
+      if (vec[i] == vec[g]) {
+        vec.erase(vec.begin() + g);
         g--;
       }
     }

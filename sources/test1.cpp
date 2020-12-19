@@ -3,7 +3,8 @@
 #include <header.hpp>
 #include <vector>
 
-std::vector<int>::iterator Find(std::vector<int>::iterator first, std::vector<int>::iterator last, int el){
+std::vector<int>::iterator Find(std::vector<int>::iterator first,
+                                std::vector<int>::iterator last, int el) {
   std::vector<int>::iterator v = first;
   while (v != last) {
     if (el == *v) {
