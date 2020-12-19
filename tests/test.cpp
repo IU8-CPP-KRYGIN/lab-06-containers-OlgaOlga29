@@ -180,7 +180,7 @@ TEST(Test7, reverseNum) {
   // базовый сценарий
   std::list<int> nums = {1, 5, 4, -3};
   reverseNum(nums);
-  result = {-1, 1, -5, 5, -4, 4, 3, -3};
+  std::list<int> result = {-1, 1, -5, 5, -4, 4, 3, -3};
   EXPECT_EQ(nums, result);
   // только отрицательные
   nums = {-1, -5, -4, -3};
